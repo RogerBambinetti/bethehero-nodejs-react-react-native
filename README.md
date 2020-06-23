@@ -11,7 +11,7 @@
 <p align="center">
 <img
 		width="700"
-		src="https://github.com/RogerBambinetti/tindev-nodejs-reactjs-react-native/blob/master/preview/Screenshot0.png">
+		src="">
 </p>
 
 ## Visão geral
@@ -26,12 +26,7 @@ O projeto possui uma versão mobile, mas o layout responsivo da aplicação web 
 <img
 		width="350"
 		src="https://github.com/RogerBambinetti/tindev-nodejs-reactjs-react-native/blob/master/preview/Screenshot3.png">
-<img
-		width="350"
-		src="https://github.com/RogerBambinetti/tindev-nodejs-reactjs-react-native/blob/master/preview/Screenshot1.png">
-<img
-		width="350"
-		src="https://github.com/RogerBambinetti/tindev-nodejs-reactjs-react-native/blob/master/preview/Screenshot2.png">
+
 </p>
 
 ## Contribuidores
