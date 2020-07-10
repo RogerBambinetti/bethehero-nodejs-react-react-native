@@ -25,7 +25,7 @@ O projeto possui uma versão mobile, mas o layout responsivo da aplicação web 
 <p align="center">
 <img
 		width="350"
-		src="https://github.com/RogerBambinetti/tindev-nodejs-reactjs-react-native/blob/master/preview/Screenshot3.png">
+		src="">
 </p>
 
 ## Contribuidores
