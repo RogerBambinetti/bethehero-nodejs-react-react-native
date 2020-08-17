@@ -11,7 +11,7 @@
 <p align="center">
 <img
 		width="700"
-		src="https://github.com/RogerBambinetti/tindev-nodejs-reactjs-react-native/blob/master/preview/Screenshot0.png">
+		src="">
 </p>
 
 ## Visão geral
