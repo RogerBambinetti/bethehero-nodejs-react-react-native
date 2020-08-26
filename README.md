@@ -24,6 +24,8 @@ O projeto possui uma versão mobile, mas o layout responsivo da aplicação web 
 
 <p align="center">
 	
+
+
 </p>
 
 ## Contribuidores
