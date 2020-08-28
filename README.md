@@ -23,7 +23,6 @@
 O projeto possui uma versão mobile, mas o layout responsivo da aplicação web também adequa-se a dispositivos móveis.
 
 <p align="center">
-	
 
 </p>
 
