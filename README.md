@@ -12,8 +12,6 @@
 <img
 		width="700"
 		src="">
-	
-
 </p>
 
 ## Visão geral
