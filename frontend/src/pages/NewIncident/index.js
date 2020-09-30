@@ -15,7 +15,7 @@ export default function NewIncident() {
                     <img src={Logo} alt="Logo" />
                     <h1>Cadastrar novo caso</h1>
                     <p>Descreva o caso detalhadamente para encontrar um herói para resolver isso.</p>
-                    <Link to="/">
+                    <Link to="/profile">
                         <FiArrowLeft size={16} color="#E02041" />
                         Voltar para Home
                     </Link>
