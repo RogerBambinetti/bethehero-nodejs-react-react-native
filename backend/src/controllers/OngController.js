@@ -1,10 +1,10 @@
 const crypto = require('crypto');
 
-const connection = require('./database/connection');
+const connection = require('../database/connection');
 
 module.exports = {
     async insert(req, res) {
-        const { name, email, whatsapp, city, uf } = request.body;
+        const { name, email, whatsapp, city, uf } = req.body;
         const id = crypto.randomBytes(4).toString('HEX');
         await connection('ongs').insert({
             id,
