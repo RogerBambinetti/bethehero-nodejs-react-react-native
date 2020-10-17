@@ -8,11 +8,12 @@ import Heroes from '../../assets/heroes.png'
 import Logo from '../../assets/logo.svg'
 
 export default function Profile() {
+    const ongName = localStorage.getItem('ongName');
     return (
         <div className="profile-container">
             <header>
                 <img src={Logo} alt="Logo" />
-                <span>Bem vinda, APAD</span>
+                <span>Bem vinda, {ongName}</span>
                 <Link className="button">Cadastrar novo caso</Link>
                 <button type="button">
                     <FiPower size={16} color="#E02041" />
@@ -31,7 +32,7 @@ export default function Profile() {
                     <p>R$ 120,00</p>
 
                     <button type="button">
-                        <FiTrash2 size={20} color="#a8a8b3"/>
+                        <FiTrash2 size={20} color="#a8a8b3" />
                     </button>
                 </li>
             </ul>
