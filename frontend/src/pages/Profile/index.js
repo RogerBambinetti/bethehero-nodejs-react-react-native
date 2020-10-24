@@ -4,9 +4,9 @@ import { Link, useHistory } from 'react-router-dom';
 
 import './styles.css';
 
-import Heroes from '../../assets/heroes.png'
-import Logo from '../../assets/logo.svg'
-import { useState } from 'react';
+import Logo from '../../assets/logo.svg';
+
+import api from '../../services/api';
 
 export default function Profile() {
     const [incidents, setIncidents] = useState([]);
@@ -42,7 +42,7 @@ export default function Profile() {
             <header>
                 <img src={Logo} alt="Logo" />
                 <span>Bem vinda, {ongName}</span>
-                <Link className="button">Cadastrar novo caso</Link>
+                <Link to="/newIncident" className="button">Cadastrar novo caso</Link>
                 <button type="button" onClick={handleLogout}>
                     <FiPower size={16} color="#E02041" />
                 </button>

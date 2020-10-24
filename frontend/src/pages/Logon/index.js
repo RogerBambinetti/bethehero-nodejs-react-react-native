@@ -17,7 +17,10 @@ export default function Logon() {
         e.preventDefault();
         try {
             const response = await api.post('sessions', { id });
+            console.log(response.data);
             localStorage.setItem('ongName', response.data.name);
+            localStorage.setItem('ongId', id);
+            console.log(response.data.name)
             history.push('/profile');
         } catch (err) {
             alert('falha no login, tente novamente');
@@ -28,7 +31,7 @@ export default function Logon() {
         <div className="logon-container">
             <section className="form">
                 <img src={Logo} alt="Logo" />
-                <form>
+                <form onSubmit={handleLogin}>
                     <h1>Faça seu logon</h1>
                     <input type="text" placeholder="Sua ID" value={id} onChange={e => setId(e.target.value)} />
                     <button type="submit" className="button">Entrar</button>

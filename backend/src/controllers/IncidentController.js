@@ -3,17 +3,18 @@ const connection = require('../database/connection');
 
 module.exports = {
     async insert(req, res) {
-        const { title, description, value } = request.body;
+        const { title, description, value } = req.body;
         const ong_id = req.headers.authorization;
         const [id] = await connection('incidents').insert({
             title,
             description,
-            value
+            value,
+            ong_id
         })
         return res.json({ id });
     },
     async index(req, res) {
-        const { page = 1 } = request.query;
+        const { page = 1 } = req.query;
         const [count] = await connection('incidents').count();
         const ongs = await connection('incidents')
             .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
@@ -25,8 +26,8 @@ module.exports = {
         return res.json(ongs);
     },
     async delete(req, res) {
-        const { id } = request.params;
-        const ong_id = request.headers.authorization;
+        const { id } = req.params;
+        const ong_id = req.headers.authorization;
 
         const incident = await connection('incidents').where('id', id).select('ong_id').first();
         if (incident.ong_id != ong_id) {
