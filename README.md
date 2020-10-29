@@ -2,7 +2,7 @@
 <h1 align="center">
 <img
 		width="200"
-		src="https://github.com/RogerBambinetti/aircnc-nodejs-reactjs-react-native/blob/master/preview/logo.png">
+		src="https://github.com/RogerBambinetti/be-the-hero-nodejs-reactjs-react-native/blob/master/preview/logo.png">
 </h1>
 <h3 align="center">
 	Be The Hero - NodeJS - ReactJS - React Native
@@ -15,7 +15,7 @@
 </p>
 ## Visão geral
 
-**Este projeto, embasado em videoaulas disponibilizadas pela [RocketSeat](https://github.com/Rocketseat), foi desenvolvido para fins de aprendizagem.** 6 telas estão disponíveis, divididas entre o sistema web e mobile.
+**Este projeto, embasado em videoaulas disponibilizadas pela [RocketSeat](https://github.com/Rocketseat), foi desenvolvido para fins de aprendizagem.** x telas estão disponíveis, divididas entre o sistema web e mobile.
 
 
 ## Telas
