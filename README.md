@@ -11,7 +11,7 @@
 <p align="center">
 <img
 		width="700"
-		src="https://github.com/RogerBambinetti/aircnc-nodejs-reactjs-react-native/blob/master/preview/Screenshot0.png">	
+		src="">	
 </p>
 ## Visão geral
 
@@ -25,7 +25,7 @@ O projeto possui uma versão mobile, mas o layout responsivo da aplicação web 
 <p align="center">
 <img
 		width="350"
-		src="https://github.com/RogerBambinetti/aircnc-nodejs-reactjs-react-native/blob/master/preview/Screenshot1.png">
+		src="">
 </p>
 
 ## Contribuidores
