@@ -33,7 +33,8 @@ export default function Incidents() {
             setLoading(true);
 
             const response = await api.get('incidents', { params: { page } });
-            setIncidents([...incidents, response.data]);
+            setIncidents([...incidents, ...response.data]);
+            console.log(incidents)
             setTotal(response.headers['x-total-count']);
             setPage(page + 1);
             setLoading(false);
@@ -54,7 +55,7 @@ export default function Incidents() {
                     Total de <Text style={styles.headerTextBold}>{total} casos</Text>
                 </Text>
             </View>
-            <Text style={styles.title}>Bem-vindo!</Text>
+            <Text style={styles.title}>Bem-vindo(a)!</Text>
             <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia</Text>
 
             <FlatList style={styles.incidentList}
@@ -62,23 +63,24 @@ export default function Incidents() {
                 keyExtractor={incident => String(incident.id)}
                 onEndReached={loadIncidents}
                 onEndReachedThreshold={0.2}
-                renderItem={({ item: incident }) => (
-                    <View style={styles.incident}>
-                        <Text style={styles.incidentProperty}>ONG: </Text>
-                        <Text style={styles.incidentValue}>{incident.name}</Text>
+                renderItem={({ item: incident }) =>
+                    (
+                        <View style={styles.incident}>
+                            <Text style={styles.incidentProperty}>ONG: </Text>
+                            <Text style={styles.incidentValue}>{incident.name}</Text>
 
-                        <Text style={styles.incidentProperty}>CASO: </Text>
-                        <Text style={styles.incidentValue}>{incident.title}</Text>
+                            <Text style={styles.incidentProperty}>CASO: </Text>
+                            <Text style={styles.incidentValue}>{incident.title}</Text>
 
-                        <Text style={styles.incidentProperty}>VALOR: </Text>
-                        <Text style={styles.incidentValue}>R$ {incident.value}</Text>
+                            <Text style={styles.incidentProperty}>VALOR: </Text>
+                            <Text style={styles.incidentValue}>R$ {incident.value}</Text>
 
-                        <TouchableOpacity style={styles.detailsButton} onPress={() => navigateToDetail(incident)}>
-                            <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
-                            <Feather name="arrow-right" size={16} color="#E02841" />
-                        </TouchableOpacity>
-                    </View>
-                )}
+                            <TouchableOpacity style={styles.detailsButton} onPress={() => navigateToDetail(incident)}>
+                                <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
+                                <Feather name="arrow-right" size={16} color="#E02841" />
+                            </TouchableOpacity>
+                        </View>
+                    )}
             />
 
         </View>
