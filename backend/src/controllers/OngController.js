@@ -1,5 +1,5 @@
 const connection = require('../database/connection');
-const { generateId } = require('../utils/generateId');
+const generateId = require('../utils/generateId');
 
 module.exports = {
     async insert(req, res) {
