@@ -5,13 +5,13 @@
 		src="https://github.com/RogerBambinetti/be-the-hero-nodejs-reactjs-react-native/blob/master/preview/logo.png">
 </h1>
 <h3 align="center">
-	Be The Hero - NodeJS - ReactJS - React Native
+	Be The Hero - NodeJS - React - React Native
 </h3>
 
 <p align="center">
 <img
 		width="700"
-		src="https://github.com/RogerBambinetti/be-the-hero-nodejs-reactjs-react-native/blob/master/preview/Screenshot0.png">	
+		src="https://github.com/RogerBambinetti/be-the-hero-nodejs-react-react-native/blob/master/preview/Screenshot0.png">	
 </p>
 
 ## Visão geral
